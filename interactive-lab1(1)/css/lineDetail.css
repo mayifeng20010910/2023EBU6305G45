@@ -1,0 +1,608 @@
+/* 清除默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header设置一个外边距 留出页面最上面的距离 */
+
+.header{
+    /* height: 445px; */
+    margin-top: 15px;
+
+}
+/* 语言部分的样式 */
+
+.language{
+    width: 100%;
+    height: 35px;
+    background-color:#101111 ;
+}
+/* 语言下面的li 标签 用来存放语言 english 韩语 */
+
+.language>ul{
+    float: right;
+    height: 35px;
+    /* right: 470px; */
+    margin-right: 210px;
+}
+.language>ul>li{
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    float: left;
+    margin-left: 5px;
+    list-style: none;
+}
+.language>ul>li:nth-of-type(1){
+    background: url(../img/lag.png);
+}
+.language>ul>li:nth-of-type(1):hover{
+    background: url(../img/lag.png) no-repeat -80px 0;
+}
+.language>ul>li:nth-of-type(2){
+    background: url(../img/lag.png) no-repeat 0px -33px;
+}
+.language>ul>li:nth-of-type(2):hover{
+    background: url(../img/lag.png) no-repeat -80px -33px;
+}
+.language>ul>li:nth-of-type(3){
+    background: url(../img/lag.png) no-repeat 0px -66px;
+}
+.language>ul>li:nth-of-type(4){
+    background: url(../img/lag.png) no-repeat 0px -99px;
+}
+
+.language>ul>li:nth-of-type(5){
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 35px;
+    background: url(../img/b7.png) no-repeat 3px 0;
+    background-color: #3c87c7;
+}
+
+/* 导航条部分 */
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #0e2a48;
+}
+
+
+/* 清除a标签默认样式 */
+
+a{
+    text-decoration: none;
+    color: #101111ce;
+}
+
+
+/* 导航条部分 */
+.nav>ul{
+    margin-left: 310px;
+    height: 70px;
+}
+.nav>ul>li{
+    height: 70px;
+    padding: 0 10px;
+    /* background-color: red; */
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+    position: relative;
+    
+}
+
+.nav>ul>li>a{
+    color: white;
+    line-height: 70px;
+}
+
+
+#home{
+    position: absolute;
+    top: 19px;
+}
+
+#homeLi{
+    width: 40px;
+}
+
+
+/* 版心 */
+.continer{
+    width: 70%;
+    /* height: 600px; */
+    /* background-color: rgb(228, 152, 152); */
+    margin: 0 auto;
+    padding-bottom: 85px;
+   
+}
+
+
+.continer>.title{
+    width: 100%;
+    height: 55px;
+    /* background-color: rgb(177, 177, 243); */
+    line-height: 55px;
+    color: rgb(175, 173, 173);
+    font-size: 14px;
+    border-bottom: 1px solid rgb(204, 203, 203);
+}
+
+.continer>.title>span{
+    color: #333;
+}
+
+.continer>.title>span:hover{
+    color: #3c88c8;
+}
+
+.content{
+    width: 100%;
+    /* height: 800px; */
+    /* background-color: rgb(226, 186, 186); */
+    margin-top: 15px;
+}
+
+
+
+.content>.top{
+    width: 100%;
+    height: 340px;
+    
+}
+
+.content>.top>.topLeft{
+    width: 500px;
+    height: 100%;
+    /* background-color: rgb(167, 164, 164); */
+    float: left;
+}
+
+.content>.top>.topLeft>img{
+    width: 100%;
+}
+
+
+
+.swiper{
+    width: 100%;
+    height: 62px;
+    border-right: 1px solid rgb(185, 182, 182);
+    border-left: 1px solid rgb(185, 182, 182);
+    border-bottom: 1px solid rgb(185, 182, 182);
+    margin-top: 25px;
+    box-sizing: border-box;
+    background: url(../img/swiper.png) no-repeat ;
+    background-size: contain;
+}
+.content>.top>.topRight{
+    width: 456px;
+    height: 100%;
+    /* background-color: rgb(36, 206, 178); */
+    float: left;
+
+    margin-left: 20px;
+}
+
+
+/* 内容上面的右边部分 */
+
+.content>.top>.topRight>h3{
+    color: #111;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.content>.top>.topRight>.wenming{
+    height: 25px;
+    margin: 15px 0;
+}
+
+.content>.top>.topRight>ul{
+    width: 100%;
+    height: 235px;
+    background-color: #e4f3fe;
+    list-style: none;
+}
+.content>.top>.topRight>ul>h3{
+    width: 100%;
+    height: 33px;
+    background-color: #80bff5;
+    line-height: 33px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.content>.top>.topRight>ul>li{
+    font-size: 12px;
+    color: #666;
+    line-height: 35px;
+    padding:0 15px;
+    box-sizing: border-box;
+    margin-top: 3px;
+
+}
+
+.content>.top>.topRight>ul>li>span{
+    background-color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.content>.top>.topRight>ul>li>font{
+    font-size: 18px;
+    color: #ff6600;
+}
+
+
+/*线路介绍 费用说明部分  */
+
+.content>.line{
+    width: 100%;
+    /* height: 1200px; */
+    
+    /* background-color: rgb(238, 199, 199); */
+    margin-top: 20px;
+
+}
+
+.content>.line>.title{
+    width: 100%;
+    height: 45px;
+    color: white;
+    line-height: 45px;
+    background-color: #555d61;
+    padding-left: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.content>.line>.title>span{
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    background-color: #f7f7f6;
+    color: #2f95e2;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+.main{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 70px;
+    border: 1px solid rgb(209, 207, 207);
+    box-sizing: border-box;
+
+}
+.main>h2{
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    margin: 50px 0;
+    color: #333;
+    font-weight: 400;
+    background: url(../img/dmoe0g08000.png) no-repeat center -117px;
+}
+
+
+.main>.left{
+    width: 174px;
+    height: 1000px;
+    /* background-color: rgb(236, 185, 185); */
+    float: left;
+    border-right: 2px solid #eee;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main>.left>span{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #48a0e4;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    margin-left: 52px;
+}
+
+.main>.left>.one{
+    width: 1px;
+    height: 37px;
+    background-color: #999;
+    position: absolute;
+    right: 45px;
+    top: -4px;
+}
+
+.main>.left>.circle{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(224, 151, 151);
+    position: absolute;
+    right: 37px;
+    top: 6px;
+    background: url(../img/dmoe0g08000.png) no-repeat -72px -287px;
+}
+
+.main>.left>.hollow{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #eee;
+    position: absolute;
+    bottom: -10px;
+    right: -8px;
+}
+
+.main>.left>.d1{
+    width: 44px;
+    height: 44px;
+    background-color: #48a0e4;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    position: absolute;
+    right: -22px;
+    top: 0px;
+}
+
+
+.main>.right{
+    width: 800px;
+    height: 1000px;
+    /* background-color: rgb(186, 243, 186) ; */
+    float: left;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.main>.right>h3{
+    font-weight: 700;
+    color: #333;
+}
+
+.borderBottom{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(206, 202, 202);
+    margin: 10px 0;
+}
+
+.dashed{
+    /* background-color: rgb(206, 202, 202); */
+    width: 100%;
+    height: 1px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-top: 1px dotted rgb(206, 202, 202);
+}
+
+.main>.right{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+.main>.right>.title{
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+.main>.right>p>span{
+    color: red;
+}
+
+.main>.right>ul{
+    width: 100%;
+    height: 170px;
+    background-color: rgb(236, 173, 173);
+    margin: 20px 0;
+}
+.main>.right>ul>li{
+    list-style: none;
+    width: 223px;
+    height: 170px;
+    float: left;
+    margin-right: 17px;
+    position: relative;
+}
+.main>.right>ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+.main>.right>ul>li>span{
+    position: absolute;
+    bottom: -4px;
+    left: 89px;
+    font-size: 14px;
+    color: white;
+}
+
+.main>.right>.foot{
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+
+/* 线路须知主体部分 */
+.know{
+    width: 100%;
+    /* background-color: rgb(223, 173, 173); */
+    margin-top: 20px;
+    border: 1px solid rgb(209, 207, 207);
+    padding: 0px 42px;
+    box-sizing: border-box;
+    
+}
+
+.know>h2{
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    margin: 50px 0;
+    color: #333;
+    font-weight: 400;
+    background: url(../img/dmoe0g08000.png) no-repeat center -117px;
+}
+
+.know>.notice{
+    width: 100%;
+    height: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: #f6f6f6;
+    text-indent: 30px;
+    position: relative;
+}
+
+.know>.notice>span{
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background-color: #48a0e3;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+
+.know>p{
+    font-size: 14px;
+    color: #666464;
+    line-height: 30px;
+    text-indent: 15px;
+}
+
+.know>p>span{
+    padding-right: 15px;
+}
+
+.know>p:nth-last-of-type(1){
+    margin-bottom: 35px;
+}
+
+
+/* 底部 */
+
+.footer{
+    width: 100%;
+    height: 280px;
+    background-color: #282928;
+    color: #f2f2f2;
+    padding: 30px 212px;
+    box-sizing: border-box;
+}
+
+.footer>.footerTop{
+    width: 100%;
+    height: 150px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(82, 80, 80);
+}
+
+.footerTop>.left{
+    height: 140px;
+    width: 40%;
+    float: left;
+    border-right: 1px solid rgb(82, 80, 80);
+    /* background-color: yellow; */
+    
+}
+
+.footerTop>.left>.leftWorld{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.footerTop>.left>.leftWorld>h1{
+    font-weight: 400;
+}
+
+.footerTop>.left>.leftWorld>p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footerTop>.right{
+    height: 140px;
+    width: 59%;
+    float: left;
+    
+}
+
+.footerTop>.right{
+    height: 140px;
+    width: 33.33%;
+    /* background: green; */
+    padding:10px 60px;
+    box-sizing: border-box;
+}
+.footerTop>.right>h3{
+    color:#4c87d1 ;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.footerTop>.right>ul{
+    list-style: none;
+}
+
+.footerTop>.right>ul>li{
+    width: 100%;
+    line-height: 40px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    position: relative;
+    background: url(../img/arrow_bottom.png) no-repeat 2px 14px;
+}
+.footerTop>.right>ul>li:nth-of-type(1){
+    padding-left: 39px;
+    box-sizing: border-box;
+}
+
+.footerTop>.right>ul>li:nth-of-type(1)>img{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+
+
+
+.footer>p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777a77;
+}
+.footer>p>span{
+    color: rgb(219, 218, 218);
+}
+
+.footer>p>span:hover{
+    color: #777a77;
+}
