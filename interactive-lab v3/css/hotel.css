@@ -1,0 +1,328 @@
+/* 景区页面样式 */
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header设置一个外边距 留出页面最上面的距离 */
+
+/* .header{
+} */
+/* 语言部分的样式 */
+
+.language {
+    width: 100%;
+    height: 35px;
+    background-color: #101111;
+}
+
+/* 语言下面的li 标签 用来存放语言 english 韩语 */
+
+.language>ul {
+    float: right;
+    height: 35px;
+    /* right: 470px; */
+    margin-right: 210px;
+}
+
+.language>ul>li {
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    float: left;
+    margin-left: 5px;
+    list-style: none;
+}
+
+.language>ul>li:nth-of-type(1) {
+    background: url(../img/lag.png);
+}
+
+.language>ul>li:nth-of-type(1):hover {
+    background: url(../img/lag.png) no-repeat -80px 0;
+}
+
+.language>ul>li:nth-of-type(2) {
+    background: url(../img/lag.png) no-repeat 0px -33px;
+}
+
+.language>ul>li:nth-of-type(2):hover {
+    background: url(../img/lag.png) no-repeat -80px -33px;
+}
+
+.language>ul>li:nth-of-type(3) {
+    background: url(../img/lag.png) no-repeat 0px -66px;
+}
+
+.language>ul>li:nth-of-type(4) {
+    background: url(../img/lag.png) no-repeat 0px -99px;
+}
+
+.language>ul>li:nth-of-type(5) {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    background: url(../img/b7.png) no-repeat 5px 0;
+    background-position: 2px;
+    background-color: rgb(250, 249, 249);
+}
+
+/* 导航条部分 */
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #0e2a48;
+}
+
+
+/* 清除a标签默认样式 */
+
+a {
+    text-decoration: none;
+    color: #101111ce;
+}
+
+
+/* 导航条部分 */
+.nav>ul {
+    margin-left: 20px;
+    height: 70px;
+}
+
+.nav>ul>li {
+    height: 70px;
+    padding: 0 65px;
+    /* background-color: red; */
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+    position: relative;
+
+}
+
+.nav>ul>li>a {
+    color: white;
+    line-height: 70px;
+}
+
+#home {
+    position: absolute;
+    top: 19px;
+}
+
+#homeLi {
+    width: 40px;
+}
+
+
+/* 版心第三部分   */
+
+.top3 {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top3>.guide {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/tit-line.png) no-repeat center center;
+    color: #0e2a48;
+    font-size: 20px;
+}
+
+.top3>.area {
+    width: 80%;
+    height: 85%;
+    /* background-color: rgb(240, 167, 167); */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 180px;
+
+}
+
+.top3>.area>.item {
+    height: 700px;
+    width: 215px;
+
+    position: relative;
+    float: left;
+}
+
+.top3>.area>.item>img {
+    width: 100%;
+    height: 300px;
+}
+
+.top3>.area>.item>span {
+    color: rgb(254, 251, 251);
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 16px;
+    left: 23px;
+}
+
+.top3>.area>.item>ul {
+    width: 100%;
+    height: 80px;
+    list-style: none;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: -6px;
+}
+
+.top3>.area>.item>ul>li {
+    font-size: 12px;
+    width: 90px;
+    background-color: red;
+    color: #101111;
+    float: left;
+    line-height: 19px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    background: url(../img/tg_dot.png) no-repeat 4px 8px;
+}
+
+/* .top3>.area>.item>ul>li:hover{
+    color: #589ee0;
+} */
+
+.top3>.area>.item:nth-of-type(2) ul>li:nth-of-type(5) {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #282928;
+    color: #f2f2f2;
+    padding: 125px 202px;
+    box-sizing: border-box;
+
+}
+
+.footer>.footerTop {
+    width: 100%;
+    height: 150px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(82, 80, 80);
+}
+
+.footerTop>.left {
+    height: 200px;
+    width: 40%;
+    float: left;
+    border-right: 1px solid rgb(82, 80, 80);
+    /* background-color: yellow; */
+
+}
+
+.footerTop>.left>.leftWorld {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.footerTop>.left>.leftWorld>h1 {
+    font-weight: 400;
+}
+
+.footerTop>.left>.leftWorld>p {
+    font-size: 14px;
+    line-height: 55px;
+}
+
+/* .footerTop>.left>.rightPic>p{
+    font-size: 12px;
+    color: #fcf9f9;
+} */
+
+.footerTop>.right {
+    height: 140px;
+    width: 59%;
+    float: left;
+
+}
+
+.footerTop>.right {
+    height: 140px;
+    width: 33.33%;
+    /* background: green; */
+    padding: 10px 60px;
+    box-sizing: border-box;
+}
+
+.footerTop>.right>h3 {
+    color: #4c87d1;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.footerTop>.right>ul {
+    list-style: none;
+}
+
+.footerTop>.right>ul>li {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    position: relative;
+    background: url(../img/arrow_bottom.png) no-repeat 2px 14px;
+}
+
+.footerTop>.right>ul>li:nth-of-type(1) {
+    padding-left: 39px;
+    box-sizing: border-box;
+}
+
+.footerTop>.right>ul>li:nth-of-type(1)>img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+
+
+.footer>p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #ecf3ec;
+}
+
+.footer>p>span {
+    color: rgb(219, 218, 218);
+}
+
+/* .footer>p>span:hover{
+    color: #777a77;
+}
+ */
